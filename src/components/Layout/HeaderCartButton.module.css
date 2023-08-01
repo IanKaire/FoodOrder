@@ -1,0 +1,80 @@
+/* Default button styles */
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: #014d27;
+  color: white;
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.button:hover,
+.button:active {
+  background-color: #042c00;
+}
+
+/* Adjust button padding and font size for smaller screens */
+@media (max-width: 768px) {
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    margin: 0 5%;
+  }
+}
+
+/* Icon styles */
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+}
+
+/* Badge styles */
+.badge {
+  background-color: #02ad1f;
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+/* Adjust badge styles for smaller screens */
+@media (max-width: 768px) {
+  .badge {
+    font-size: 0.8rem;
+  }
+}
+
+/* Hover and active states for badge */
+.button:hover .badge,
+.button:active .badge {
+  background-color: #006e12;
+}
+
+/* Bump animation */
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
